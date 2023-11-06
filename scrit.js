@@ -86,47 +86,49 @@ console.log(array5(["level", "12321", "abcd", "amma", "appa"]));
 //``````````````````````````````````````````````````````````````````````````````
 
 // f.Return median of two sorted arrays of the same size.
-var output7=[]
-var array7=function(arra,arrb){
-  var arrc=[...arra,...arrb];
-  var arr7=arrc.sort((a,b)=>a-b);
-  console.log(arr7);
-  var n=Math.floor(arr7.length/2);
-  if(arr7.length%2!==0){
-    output7.push(arr7[n]);
-  }
-  else{
-    output7.push((arr7[n-1]+arr7[n])/2)
-  }
-  return output7;
+var output6 = []
+var array6 = function (arra, arrb) {
+    var arrc = [...arra, ...arrb];
+    var arr6 = arrc.sort((a, b) => a - b);
+    console.log(arr6);
+    var n = Math.floor(arr6.length / 2);
+    if (arr6.length % 2 !== 0) {
+        output6.push(arr6[n]);
+    }
+    else {
+        output6.push((arr6[n - 1] + arr6[n]) / 2)
+    }
+    return output6;
 }
-console.log(array7([1,2,3,4,5],[6,7,8,9.10]));
+console.log(array6([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]));
 
 //____________________________________end of 6__________________________________________
 //``````````````````````````````````````````````````````````````````````````````
 
 // g.Remove duplicates from an array
+var output7 = [];
+var array7 = function (arr7) {
+    console.log([...new Set(arr7)]);
+}
+array7([1, 1, 2, 3, 4, 2, 3, 5, 5]);
 
 // ____________________________________end of 7__________________________________________
 // ``````````````````````````````````````````````````````````````````````````````
 
 // h.Rotate an array by k times
-var array8=function(arr8,k){
-    for(var i=0;i<k;i++){
-      arr8.push(arr8[i])  
+var array8 = function (arr8, k) {
+    for (var i = 0; i < k; i++) {
+        arr8.push(arr8[i])
     }
-    for(var i=0;i<k;i++){
+    for (var i = 0; i < k; i++) {
         arr8.shift(arr8[i])
     }
-   return arr8;
+    return arr8;
 }
-console.log(array8([1,2,3,4,5],3));
+console.log(array8([1, 2, 3, 4, 5], 3));
 // ____________________________________end of 8__________________________________________
 // ``````````````````````````````````````````````````````````````````````````````
 //-----------------------------------------------------------------------------------------------------------------
-
-
-
 //IIEF
 //({})()
 var output11 = [];
@@ -207,30 +209,43 @@ var output55 = [];
     console.log(output55)
 })
     (["level", "welcome", "amma", "appa"])
-// //____________________________________end of 5__________________________________________
-// //``````````````````````````````````````````````````````````````````````````````
+    // //____________________________________end of 5__________________________________________
+    // //``````````````````````````````````````````````````````````````````````````````
 
-// f.Return median of two sorted arrays of the same size.
+    //    f.Return median of two sorted arrays of the same size.
+    (function (arr1, arr2) {
+        var arr3 = [...arr1, ...arr2];
+        var arr66 = arr3.sort((a, b) => a - b)
+        console.log(arr66);
+        var n = Math.floor(arr66.length / 2);
+        if (arr66.length % 2 !== 0) {
+            console.log(arr66[n]);
+        }
+        else {
+            console.log((arr66[n - 1] + arr66[n]) / 2);
+        }
+    })([1, 2, 3, 4, 6], [12, 13, 14, 15])
 
 
-
-// //____________________________________end of 6__________________________________________
-// //``````````````````````````````````````````````````````````````````````````````
-
-// // g.Remove duplicates from an array
+    // //____________________________________end of 6__________________________________________
+    // //``````````````````````````````````````````````````````````````````````````````
+    // // g.Remove duplicates from an array
+    (function (arr7) {
+        console.log([...new Set(arr7)]);
+    })([1, 1, 2, 3, 4, 2, 3, 5, 5]);
 // // ____________________________________end of 7__________________________________________
 // // ``````````````````````````````````````````````````````````````````````````````
 // // h.Rotate an array by k times
-(function(arr83,k){
-  for(var i=0;i<k;i++){
-    arr83.push(arr83[i])  
-  }
-  for(var i=0;i<k;i++){
-      arr83.shift(arr83[i])
-  }
- console.log(arr83); 
+(function (arr83, k) {
+    for (var i = 0; i < k; i++) {
+        arr83.push(arr83[i])
+    }
+    for (var i = 0; i < k; i++) {
+        arr83.shift(arr83[i])
+    }
+    console.log(arr83);
 })
-([1,2,3,4,5],3);
+    ([1, 2, 3, 4, 5], 3);
 // // ____________________________________end of 8__________________________________________
 // // ``````````````````````````````````````````````````````````````````````````````
 // //-----------------------------------------------------------------------------------------------------------------
